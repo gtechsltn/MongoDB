@@ -23,6 +23,13 @@ https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
 + **Use a DbContext factory**
 + [**ASP.NET Core Blazor with Entity Framework Core (EF Core)**](https://learn.microsoft.com/en-us/aspnet/core/blazor/blazor-ef-core)
 + [**Multitenancy**](https://github.com/dotnet/EntityFramework.Docs/tree/live/samples/core/Miscellaneous/Multitenancy)
+    + [ContactContext.cs](https://github.com/dotnet/EntityFramework.Docs/blob/live/samples/core/Miscellaneous/Multitenancy/MultiDb/ContactContext.cs)
++ Seed data
+```
+// seed the database so demo is simple and doesn't require migrations
+using var ctx = app.Services.CreateScope().ServiceProvider.GetRequiredService<ContactContext>();
+await ctx.CheckAndSeedAsync();
+```
 
 # EF Core + MongoDB
 
