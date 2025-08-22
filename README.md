@@ -1,5 +1,9 @@
 # MongoDB
 
+A ready-to-run C# console solution demonstrating a multi-tenant MongoDB setup with connection pool control, MongoClient reuse, and tenant-aware services.
+
+An enterprise multi-tenant style
+
 # EF Core
 
 https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
