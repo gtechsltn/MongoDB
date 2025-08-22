@@ -4,6 +4,10 @@ A ready-to-run C# console solution demonstrating a multi-tenant MongoDB setup wi
 
 An enterprise multi-tenant style
 
+[**IUserService.cs**](https://github.com/gtechsltn/CRMApp-React-AspNetCore-in-visualstudio-2022/blob/main/CRMAppReactAspnetcore/CRMAppReactAspnetcore.Server/Models/IUserService.cs)
+
+[**MongoDbContext.cs**](https://github.com/gtechsltn/CRMApp-React-AspNetCore-in-visualstudio-2022/blob/main/CRMAppReactAspnetcore/CRMAppReactAspnetcore.Server/Models/MongoDbContext.cs)
+
 # EF Core
 
 https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
