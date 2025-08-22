@@ -1,5 +1,31 @@
 # MongoDB
 
+# EF Core
+
+https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/
+
++ IConfiguration
++ IServiceCollection
++ IServiceScopeFactory
++ IDbContextFactory
++ AppDbContext : DbContext
++ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
++ DbContextOptionsBuilder
+    + optionsBuilder.UseSqlServer
+    + optionsBuilder.EnableSensitiveDataLogging()
++ DbContextOptions
++ DbContextOptions<T> where T : DbContext
++ services.AddDbContext
++ services.AddDbContextFactory
+    + _contextFactory.CreateDbContext()
+
++ **Design-time DbContext configuration**
++ **Use a DbContext factory**
++ [**ASP.NET Core Blazor with Entity Framework Core (EF Core)**](https://learn.microsoft.com/en-us/aspnet/core/blazor/blazor-ef-core)
++ [**Multitenancy**](https://github.com/dotnet/EntityFramework.Docs/tree/live/samples/core/Miscellaneous/Multitenancy)
+
+# EF Core + MongoDB
+
 You’re asking about IMongoDbContextFactory. This is typically used in applications that interact with MongoDB and follow the unit-of-work / repository pattern, similar to how IDbContextFactory<T> works in Entity Framework. It’s usually part of custom abstractions, because MongoDB’s official driver does not define IMongoDbContextFactory by default — it’s something you or a library might implement to manage IMongoDatabase instances.
 
 I’ll explain how to set it up and use it properly step by step.
